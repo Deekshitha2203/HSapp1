@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>The Higher Studies Club | CMR Institute of Technology</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hs.css">
+        <script src="hs.js"></script>
+    </head>
+    <body>
+        <div id="sec1">
+        <header id="main-header">
+            <img id="logo" src="log-removebg-preview.png" alt="Higher Studies Club logo" width="100" length="100">
+            <a href="#sec1">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#sec2">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#sec3">QUICK TIPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#examinations">EXAMINATIONS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#foot">CONTACT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </header>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="home" id="homeDiv" onclick="toggleSize()">
+            <h1>The Higher Studies Club</h1>
+        </div>
+        <div id="scroll-down-arrow">
+            <a href="#content">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div id="sec2">
+        <br><br><br>
+        <div id="content">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Welcome to The Higher Studies Club</h2>
+            <h4>Fueling Your Higher Education Adventure!</h4>
+            <p>At The Higher Studies Club, we're committed to guiding you towards academic excellence and beyond. Our holistic approach to higher education encompasses personalized guidance on extracurricular activities, research opportunities, and admission requirements. With meticulous attention to detail and a focus on your aspirations, our dedicated team ensures you're equipped to navigate the journey to top universities with confidence. From exploring diverse study destinations to crafting tailored roadmaps, we're here to support you on your path to success. Join us as we turn your ambitions into reality, one step at a time.</p>
+            <a href="#sec3"><button><span>Get Started</span> <i class="fas fa-arrow-right"></i></button> </a> 
+        </div>
+    </div>   
+    <div id="sec3">
+        <br><br><br><br><br>
+        <center><h1>Craft an Exceptional Application: Quick Tips!</h1></center>
+        <div id="todo-list">
+            <div class="todo-item" onclick="showDescription(1)">
+                <img src="OIG1.usWpdlQFAdLJadeeA9La.jpeg" alt="Club Activities">
+                <h3>Club Activities</h3>
+                <p>Participating in club activities enhances teamwork and leadership skills.</p>
+            </div>
+            <div class="todo-item" onclick="showDescription(2)">
+                <img src="ngo.jpeg" alt="Social Services">
+                <h3>Social Services</h3>
+                <p>Engaging in social services demonstrates empathy and community involvement.</p>
+            </div>
+            <div class="todo-item" onclick="showDescription(3)">
+                <img src="pro.jpeg" alt="Hackathons & Projects">
+                <h3>Hackathons & Projects</h3>
+                <p>Participating in hackathons and projects showcases creativity and problem-solving skills.</p>
+            </div>
+            <div class="todo-item" onclick="showDescription(4)">
+                <img src="OIG2.bjJ4XXDoe_D3.ntjiSj8.jpeg" alt="Research Papers & Patents">
+                <h3>Research Papers & Patents</h3>
+                <p>Writing research papers and obtaining patents demonstrate academic excellence and innovation.</p>
+            </div>
+            <div class="todo-item" onclick="showDescription(5)">
+                <img src="OIG1.kGh_1TPM.T7qksnjNkBn.jpeg" alt="Internships">
+                <h3>Internships</h3>
+                <p>Completing internships provides practical experience and industry exposure.</p>
+            </div>
+            <div class="todo-item" onclick="showDescription(6)">
+                <img src="OIG3.o_d9kGXscmkhQj3jFHqC.jpeg" alt="SOPs">
+                <h3>Statement of Purpose (SOPs)</h3>
+                <p>Writing compelling SOPs showcases your goals, aspirations, and suitability for the program.</p>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description-box">
+                <h2>Topic Insights</h2>
+                <p id="descriptionText">Click on the topics above to delve deeper into each and learn more about their significance.</p>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    
+    <div id="examinations"><br><br>
+        <h1 class="section-title">Examinations</h1>
+        
+        <div class="exam-container square-container">
+            <div class="exam-image">
+                <img src="OIG3.q95nDXWCoFyQd3XgggWB.jpeg" alt="Graduate School Entrance Exams" height="200" width="200">
+            </div>
+            <div class="exam-type grad-exams">
+                <h3 class="exam-title">Graduate School Entrance Exams</h3>
+                <div class="exam-box" onclick="openModal('graduateExam1Modal')">
+                    GRE - Graduate Record Examination
+                </div>
+                <div class="exam-box" onclick="openModal('graduateExam2Modal')">
+                    GATE - Graduate Aptitude Test in Engineering
+                </div>
+            </div>
+        </div>
+        <hr> <!-- Add horizontal line between exam sections -->
+        <div class="exam-container square-container">
+            <div class="exam-image">
+                <img src="OIG3.TPX6FYWiuhMJsx2OY2gE.jpeg" alt="English Proficiency Exams" height="200" width="200">
+            </div>
+            <div class="exam-type eng-tests">
+                <h3 class="exam-title">English Proficiency Test</h3>
+                <div class="exam-box" onclick="openModal('englishTest1Modal')">
+                    IELTS - International English Language Testing System
+                </div>
+                <div class="exam-box" onclick="openModal('englishTest2Modal')">
+                    TOEFL - Test of English as a Foreign Language
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+        <!-- Modals -->
+        <!-- Your modal code goes here -->
+         <!-- Modals -->
+         <div id="graduateExam1Modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('graduateExam1Modal')">&times;</span>
+                <div class="modal-text">
+                    The GRE (Graduate Record Examination) is a standardized test used for graduate school admissions across various disciplines, including business, engineering, social sciences, humanities, and natural sciences. It is widely accepted by graduate programs and business schools in many countries around the world, including the United States, Canada, the United Kingdom, Australia, Germany, France, India, China, and many others. It assesses verbal reasoning, quantitative reasoning, and analytical writing skills. Administered as a computer-based test, it comprises sections dedicated to verbal and quantitative reasoning, as well as analytical writing. Adequate preparation through study guides, practice tests, and online resources is crucial for success. Registration is available online through the official ETS website, with test dates and locations offered year-round. GRE scores are vital components of graduate school applications, influencing admission decisions and scholarship opportunities. The validity of GRE scores extends for five years from the test date, emphasizing the significance of strategic timing and preparation.
+                </div>
+            </div>
+        </div>
+    
+        <div id="graduateExam2Modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('graduateExam2Modal')">&times;</span>
+                <div class="modal-text">
+                    The GATE (Graduate Aptitude Test in Engineering) is a national-level examination conducted in India for admission to postgraduate programs in engineering and technology. It evaluates candidates' comprehensive understanding of various undergraduate subjects in engineering and science. GATE scores are accepted by numerous Indian institutes for master's and doctoral programs, as well as by some international universities for admissions and employment. The exam covers a wide range of disciplines, including engineering, technology, architecture, and science. It is conducted jointly by the Indian Institute of Science (IISc) and seven Indian Institutes of Technology (IITs) on behalf of the National Coordination Board (NCB)-GATE, Department of Higher Education, Ministry of Education (MoE), Government of India. The exam is held annually in multiple sessions across various cities in India and sometimes in select international locations. A good GATE score is crucial for securing admission to top-tier institutions and can also open doors to lucrative job opportunities in the public and private sectors.
+                </div>
+            </div>
+        </div>
+    
+        <div id="englishTest1Modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('englishTest1Modal')">&times;</span>
+                <div class="modal-text">
+                    
+The IELTS (International English Language Testing System) is a standardized test designed to assess the English language proficiency of non-native English speakers. It is recognized by universities, employers, and immigration authorities in many English-speaking countries worldwide. The test evaluates candidates' abilities in listening, reading, writing, and speaking English. IELTS scores are used for admission to academic programs, employment opportunities, and visa applications. The test is available in two formats: Academic and General Training. The Academic version is suitable for individuals applying for higher education or professional registration, while the General Training version is typically used for immigration purposes or work experience/training programs. IELTS is accepted in over 140 countries, including the United Kingdom, Australia, Canada, and the United States. It is administered by British Council, IDP: IELTS Australia, and Cambridge Assessment English. Preparing well for the IELTS exam can significantly improve one's chances of success in academic and professional endeavors.
+                </div>
+            </div>
+        </div>
+    
+        <div id="englishTest2Modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('englishTest2Modal')">&times;</span>
+                <div class="modal-text">
+                    
+The TOEFL (Test of English as a Foreign Language) is a standardized test that assesses the English language proficiency of non-native English speakers. It measures the ability to understand and use English at the university level and is accepted by more than 11,000 universities and other institutions in over 150 countries. The test evaluates four key areas: reading, listening, speaking, and writing. TOEFL scores are used for admission to academic programs, scholarship applications, and visa processes. The test is available in two formats: the internet-based test (iBT) and the paper-based test (PBT). The iBT is more commonly administered and includes integrated tasks that simulate real-life academic situations. The TOEFL iBT test is conducted online and can be taken at authorized test centers worldwide. It is essential for candidates to prepare thoroughly for the TOEFL exam to achieve their desired scores and succeed in their academic and professional pursuits.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+    <div id="foot" class="footer">
+        <h2 style="font-family: 'Times New Roman', Times, serif; color:black; font-size: 30px;">Reach Out to Us!</h2>
+        <div class="containers">
+            <div class="details">
+                <h3>Faculty Co-ordinator:</h3>
+                Dr. Sharmila K P<br>
+                Director- External Affairs<br>
+                Professor, Dept. of ECE,<br>
+                CMR Institute of Technology (NAAC A++ Accredited)<br>
+                Phone No: +919448466719<br>
+                Mail ID: sharmila.kp@cmrit.ac.in
+            </div>
+        
+            <div class="details">
+                <h3>Student Co-ordinator:</h3>
+                Ms. Deekshitha M<br>
+                1CR21CS056, CSE<br>
+                Higher Studies Club Head,<br>
+                CMR Institute of Technology (NAAC A++ Accredited)<br>
+                Phone No: +919035438999<br>
+                Mail Id: dem21cs@cmrit.ac.in
+            </div>
+        </div>
+        <p>&copy; 2024 The Higher Studies Club. All rights reserved.</p>
+    </div>
+     
+    </body>
+</html>
